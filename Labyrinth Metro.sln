@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labyrinth Metro", "Assembly-CSharp.csproj", "{B369393D-8E82-13BA-740A-A25CA7974BCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Labyrinth Metro", "Assembly-CSharp-Editor.csproj", "{2D9EFAB2-8B63-1F40-CF0B-FED92DC4D9EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B369393D-8E82-13BA-740A-A25CA7974BCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B369393D-8E82-13BA-740A-A25CA7974BCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B369393D-8E82-13BA-740A-A25CA7974BCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B369393D-8E82-13BA-740A-A25CA7974BCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D9EFAB2-8B63-1F40-CF0B-FED92DC4D9EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D9EFAB2-8B63-1F40-CF0B-FED92DC4D9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D9EFAB2-8B63-1F40-CF0B-FED92DC4D9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D9EFAB2-8B63-1F40-CF0B-FED92DC4D9EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
