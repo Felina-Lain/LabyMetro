@@ -33,7 +33,6 @@ public class FadeOut : MonoBehaviour {
 		float i = img.color.a;
 		if(i > 0){i -= Time.deltaTime;}
 		img.color = new Color(0, 0, 0, i);
-		print("one");
 
 	}
 
@@ -42,7 +41,6 @@ public class FadeOut : MonoBehaviour {
 		float i = img.color.a;
 		if(i < 1){i += Time.deltaTime;}
 		img.color = new Color(0, 0, 0, i);
-		print("two");
 
 	}
 }

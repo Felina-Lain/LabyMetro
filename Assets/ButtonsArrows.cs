@@ -32,7 +32,14 @@ public class ButtonsArrows : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void OnTriggerExit() {
+		
+		Transform[] allTransforms = gameObject.GetComponentsInChildren<Transform>();
+
+		foreach(Transform childObjects in allTransforms){
+			if(gameObject.transform.IsChildOf(childObjects.transform) == false)
+				Destroy(childObjects.gameObject);
+		}
 		
 	}
 }
