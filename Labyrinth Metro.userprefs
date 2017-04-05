@@ -2,7 +2,6 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\FadeOut.cs">
     <Files>
-      <File FileName="Assets\Simple Graph Editor\Scripts\WayPoint.cs" Line="1" Column="1" />
       <File FileName="Assets\FadeOut.cs" Line="34" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
