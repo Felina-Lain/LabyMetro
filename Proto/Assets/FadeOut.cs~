@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class FadeOut : MonoBehaviour {
 
 	public Image img;
-	public bool canFade;
-	private Color alphaColor;
+	public static bool canFade;
+	public static float _alpha;
 
 	public void Start()
 	{
@@ -18,31 +18,26 @@ public class FadeOut : MonoBehaviour {
 		if (canFade)
 		{
 			FadingOut();
-		}else{
+		}else if(!canFade){
 			FadingIn();
 		}
 	}
 
-	public void OnOff_Fade(){
-
-		canFade = !canFade;
-
-	}
-
-	private void FadingOut(){
-		float i = img.color.a;
-		if(i > 0){i -= Time.deltaTime;}
-		img.color = new Color(0, 0, 0, i);
-		print("one");
-
-	}
-
-	private void FadingIn(){
-
+	private void FadingOut(){ //goes black, alpha goes to max 1
+		print("out");
 		float i = img.color.a;
 		if(i < 1){i += Time.deltaTime;}
 		img.color = new Color(0, 0, 0, i);
-		print("one");
+		_alpha = i;
+
+	}
+
+	private void FadingIn(){ //goes transparent, alpha goes to 0
+		print("in");
+		float i = img.color.a;
+		if(i > 0){i -= Time.deltaTime;}
+		img.color = new Color(0, 0, 0, i);
+		_alpha = i;
 
 	}
 }
