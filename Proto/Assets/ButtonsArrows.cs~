@@ -9,6 +9,10 @@ public class ButtonsArrows : MonoBehaviour {
 	// Use this for initialization
 	void OnTriggerEnter (Collider _col) {
 
+		if(ChangeStation.target == this.GetComponent<WayPoint>()){
+			FadeOut.canFade = false;
+		}
+
 		foreach(Transform child in transform)
 		{
 			child.transform.gameObject.SetActive(true);

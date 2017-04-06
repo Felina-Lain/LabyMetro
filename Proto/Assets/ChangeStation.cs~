@@ -28,8 +28,7 @@ public class ChangeStation : MonoBehaviour {
 		//In case the square arrived to the target waypoint (very small distance)
 			if (distance < 0.1)
 				target = null;
-			FadeOut.canFade = false;
-		}
+			}
 		
 	}
 		
