@@ -5,29 +5,30 @@ using UnityEngine;
 public class ChooseStation : MonoBehaviour {
 
 	public WayPoint _newtarget;
+	public bool _cantarget = false;
 
-	void Update(){
-		
+
+
+	void OnMouseOver(){
+
 			if (Input.GetMouseButtonDown(0)){ // if left button pressed...
-				Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-				RaycastHit hit;
-				if (Physics.Raycast(ray, out hit)){
-					// the object identified by hit.transform was clicked
-					// do whatever you want
-				print(hit.transform.name);
-
-				if(hit.transform.name.Contains("Plane")){
-
-						FadeOut.canFade = true;					
-
-					 }
-				}
+			
+						FadeOut.canFade = true;		
+			}
 		}
 
-		if(FadeOut._alpha >= 1f){
+	void OnMouseEnter(){
+		_cantarget = true;
+	}
 
-			ChangeStation.target = _newtarget;
 
+	void Update(){
+
+		if(FadeOut._alpha >= 1f && _cantarget){
+
+			print ("llaaaaa new target : " + _newtarget + " de la part de " + transform.name);
+			ChangeStation.target = this.GetComponent<ChooseStation>()._newtarget;
+			_cantarget = false;
 		}
 	}
 }

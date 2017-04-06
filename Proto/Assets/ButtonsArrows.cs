@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ButtonsArrows : MonoBehaviour {
-
-	public float dist;
-
+	
 	// Use this for initialization
 	void OnTriggerEnter (Collider _col) {
 
