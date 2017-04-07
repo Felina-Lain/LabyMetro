@@ -13,13 +13,10 @@ public class ChooseStation : MonoBehaviour {
 
 			if (Input.GetMouseButtonDown(0)){ // if left button pressed...
 			
-						FadeOut.canFade = true;		
+						FadeOut.canFade = true;
+						_cantarget = true;
 			}
 		}
-
-	void OnMouseEnter(){
-		_cantarget = true;
-	}
 
 
 	void Update(){
