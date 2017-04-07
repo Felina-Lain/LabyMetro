@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="AudioFile" id="{656c0743-45c0-4f44-b5ff-50b7c6792306}">
+        <property name="assetPath">
+            <value>Bel-ami.mp3</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.1493877551020408</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{7bdffe4e-fdb9-456d-95f7-866d699c117f}</destination>
+        </relationship>
+    </object>
+</objects>

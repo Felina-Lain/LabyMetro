@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="AudioFile" id="{4ce55713-07d2-4262-b923-d49752ff5ec4}">
+        <property name="assetPath">
+            <value>ThierryMathéa.mp3</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>0.73142857142857143</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{7bdffe4e-fdb9-456d-95f7-866d699c117f}</destination>
+        </relationship>
+    </object>
+</objects>

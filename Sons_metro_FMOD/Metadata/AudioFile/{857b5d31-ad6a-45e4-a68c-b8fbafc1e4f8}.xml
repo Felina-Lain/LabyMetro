@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.09.00">
+    <object class="AudioFile" id="{857b5d31-ad6a-45e4-a68c-b8fbafc1e4f8}">
+        <property name="assetPath">
+            <value>Attention_a_la_marche.WAV</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.3999999999999999</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{7bdffe4e-fdb9-456d-95f7-866d699c117f}</destination>
+        </relationship>
+    </object>
+</objects>

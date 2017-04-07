@@ -1,0 +1,26 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class StationSounds : MonoBehaviour {
+
+
+	[FMODUnity.EventRef]
+	public string MovingTrain;
+
+	[FMODUnity.EventRef]
+	public string DoorOpen;
+
+	// Update is called once per frame
+	void OnTriggerExit () {
+
+	FMODUnity.RuntimeManager.PlayOneShot (MovingTrain);
+		
+	}
+
+	void OnTriggerEnter(){
+
+	FMODUnity.RuntimeManager.PlayOneShot (DoorOpen);
+
+	}
+}
