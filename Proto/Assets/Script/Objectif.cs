@@ -28,14 +28,22 @@ public class Objectif : MonoBehaviour {
 
 		}
 
-		Transform _spawn = null;
-		if(_spawn == null || _spawn == _station_to_go.transform)
-		_spawn = stations[Random.Range( 0,stations.Count )].transform;
+		List<WayPoint> _temp = stations;
+		_temp.Remove (_station_to_go);
+
+		Transform _spawn = _temp[Random.Range( 0,_temp.Count )].transform;
 
 
 		transform.position = _spawn.position;
 
+		if (_temp.Contains (_station_to_go)) {
+		
+			print ("I fucked up");
+		
+		} else {
 
+			print ("Okay boss");
+		}
 
 	}
 

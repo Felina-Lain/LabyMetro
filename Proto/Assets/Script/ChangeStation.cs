@@ -12,7 +12,7 @@ public class ChangeStation : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		print (target);
+		//print (target);
 
 		if(target != null){
 		//Distance between the square and the current target waypoint
