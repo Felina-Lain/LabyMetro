@@ -298,6 +298,8 @@ namespace FMODUnity
             return FMODPlatform.UWP;
             #elif UNITY_SWITCH
             return FMODPlatform.Switch;
+			#elif UNITY_WEBGL
+			return FMODPlatform.Windows;
             #endif
         }
 
