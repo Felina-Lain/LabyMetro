@@ -5,17 +5,19 @@ using UnityEngine.UI;
 
 public class CameraTravelling : MonoBehaviour {
 
+	public bool _chrono;
 
 	public GameObject target;
 	public float speed = 1f;
 	public float _staring_wait;
 	public GameObject names;
 	public GameObject objectif;
+	public GameObject _buttons;
 
 	// Update is called once per frame
 	void Update () {
 
-		if (_staring_wait > 0) {
+		if (_staring_wait > 0 && _chrono) {
 			_staring_wait -= Time.deltaTime;
 		}
 
@@ -43,6 +45,14 @@ public class CameraTravelling : MonoBehaviour {
 		}
 
 		
+	}
+
+	public void ChangeBool(){
+
+		_buttons.SetActive (false);
+		names.SetActive (true);
+		_chrono = true;
+
 	}
 
 }
